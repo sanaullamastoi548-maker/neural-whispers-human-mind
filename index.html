@@ -19,11 +19,13 @@
                     <li><a href="#facts">Psychology Facts</a></li>
                     <li><a href="#mind">Mind & Behavior</a></li>
                     <li><a href="#emotions">Emotions</a></li>
+                    <li><a href="#relationships">Relationships</a></li>
                     <li><a href="#memory">Memory</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
             </nav>
             <div class="nav-actions">
+                <div class="lang-select">EN 🌐</div>
                 <button id="theme-toggle" class="theme-btn">🌙</button>
             </div>
         </div>
@@ -44,6 +46,11 @@
             <div class="brain-card-illustration">
                 <div class="brain-graphic">🧠</div>
                 <p>"The mind is not a single thing, it's a universe."</p>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -53,6 +60,7 @@
         <div class="section-header">
             <h2>Explore by Category</h2>
             <p>Find psychology facts about different areas of your mind.</p>
+            <button class="btn-text">View All Categories →</button>
         </div>
         <div class="category-grid">
             <div class="cat-card active">
@@ -68,16 +76,118 @@
                 <span>Emotions</span>
             </div>
             <div class="cat-card">
+                <div class="cat-icon">👥</div>
+                <span>Relationships</span>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon">🧠</div>
+                <span>Memory</span>
+            </div>
+            <div class="cat-card">
                 <div class="cat-icon">🌙</div>
                 <span>Sleep & Dreams</span>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon">🎯</div>
+                <span>Habits</span>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon">💬</div>
+                <span>Communication</span>
             </div>
         </div>
     </section>
 
+    <!-- Latest Psychology Facts Section -->
+    <section class="facts-section" id="facts">
+        <div class="section-header">
+            <h2>Latest Psychology Facts</h2>
+            <p>Small facts. Big insights. Explore the science of your mind.</p>
+            <button class="btn-text">View All Facts →</button>
+        </div>
+        <div class="facts-grid">
+            <div class="fact-card">
+                <span class="fact-tag">FACT #001</span>
+                <h3>Why do we sometimes remember embarrassing moments for years?</h3>
+                <p>Because our brain thinks these moments are important for our survival and learning.</p>
+                <span class="read-more">Read Full Fact →</span>
+            </div>
+            <div class="fact-card">
+                <span class="fact-tag">FACT #002</span>
+                <h3>Mind reading is a real thing (but it's a bias).</h3>
+                <p>We often assume we know what others are thinking, even when we don't.</p>
+                <span class="read-more">Read Full Fact →</span>
+            </div>
+            <div class="fact-card">
+                <span class="fact-tag">FACT #003</span>
+                <h3>Your brain is more active at night than you think.</h3>
+                <p>It processes emotions, memory and even creative ideas while you sleep.</p>
+                <span class="read-more">Read Full Fact →</span>
+            </div>
+            <div class="fact-card">
+                <span class="fact-tag">FACT #004</span>
+                <h3>We feel emotions in our body, not just mind.</h3>
+                <p>Emotions can trigger real physical changes like faster heartbeat or tense muscles.</p>
+                <span class="read-more">Read Full Fact →</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore the Human Mind Interactive Banner -->
+    <section class="interactive-banner" id="mind">
+        <div class="banner-content">
+            <div class="banner-icon">🧠</div>
+            <div>
+                <h2>Explore the Human Mind</h2>
+                <p>Click on different areas of the mind to discover amazing psychological facts and how your mind works.</p>
+            </div>
+        </div>
+        <button class="btn-primary">Start Exploring →</button>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <h2>Neural Whispers <span>ذہنی سرگوشیاں</span></h2>
+                <p>Mind • Psychology • Better You</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Psychology Facts</a></li>
+                    <li><a href="#">Mind & Behavior</a></li>
+                    <li><a href="#">Emotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>&nbsp;</h4>
+                <ul>
+                    <li><a href="#">Relationships</a></li>
+                    <li><a href="#">Memory</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Connected</h4>
+                <div class="social-icons">
+                    <span>🌐</span><span>✖</span><span>📷</span><span>▶</span><span>📌</span>
+                </div>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <p>© 2026 Neural Whispers. All rights reserved. | Designed with ❤️ for curious minds.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
     </footer>
 
