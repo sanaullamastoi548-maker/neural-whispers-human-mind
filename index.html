@@ -1,196 +1,721 @@
 <!DOCTYPE html>
-<html lang="ur" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neural Whispers | ذہنی سرگوشیاں</title>
+
+    <title>Neural Whispers</title>
+
+    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <h2>Neural Whispers <span>ذہنی سرگوشیاں</span></h2>
-            </div>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#facts">Psychology Facts</a></li>
-                    <li><a href="#mind">Mind & Behavior</a></li>
-                    <li><a href="#emotions">Emotions</a></li>
-                    <li><a href="#relationships">Relationships</a></li>
-                    <li><a href="#memory">Memory</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <!-- Brain Logo -->
+                    <span>🧠</span>
+                </div>
+
+                <div class="logo-text">
+                    <h2>Neural Whispers</h2>
+                    <p>ذہنی سرگوشیاں</p>
+                </div>
+            </a>
+
+
+            <!-- Navigation -->
+            <nav class="navigation">
+
+                <a href="#" class="active">Home</a>
+
+                <a href="#psychology">
+                    Psychology Facts
+                </a>
+
+                <a href="#mind">
+                    Mind &amp; Behavior
+                </a>
+
+                <a href="#encyclopedia">
+                    Encyclopedia
+                </a>
+
+                <a href="#interesting">
+                    Interesting
+                </a>
+
+                <a href="#memory">
+                    Memory
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
             </nav>
-            <div class="nav-actions">
-                <div class="lang-select">EN 🌐</div>
-                <button id="theme-toggle" class="theme-btn">🌙</button>
+
+
+            <!-- Header Buttons -->
+            <div class="header-buttons">
+
+                <button class="search-button" type="button">
+                    🔍
+                </button>
+
+                <button class="language-button" type="button">
+                    EN
+                    <span>⌄</span>
+                </button>
+
+                <button class="profile-button" type="button">
+                    G
+                </button>
+
             </div>
+
         </div>
+
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <span class="badge">EXPLORE • LEARN • UNDERSTAND</span>
-            <h1>Neural Whispers <br><span>ذہنی سرگوشیاں</span></h1>
-            <p>Discover the fascinating psychology facts behind the human mind, behavior and emotions.</p>
-            <div class="hero-buttons">
-                <button class="btn-primary">Explore Psychology Facts</button>
-                <button class="btn-secondary">Learn More</button>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="brain-card-illustration">
-                <div class="brain-graphic">🧠</div>
-                <p>"The mind is not a single thing, it's a universe."</p>
-                <div class="slider-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-container">
+
+                <!-- Hero Left -->
+                <div class="hero-content">
+
+                    <p class="hero-small-title">
+                        INSIGHT • BRAIN • UNDERSTANDING
+                    </p>
+
+                    <h1>
+                        Neural Whispers
+                    </h1>
+
+                    <h2>
+                        ذہنی سرگوشیاں
+                    </h2>
+
+                    <p class="hero-description">
+                        Discover the fascinating psychology facts behind
+                        the human mind, behavior and emotions.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#psychology" class="primary-button">
+                            Explore Psychology Facts
+                            <span>→</span>
+                        </a>
+
+                        <a href="#about" class="secondary-button">
+                            Learn More
+                        </a>
+
+                    </div>
+
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Categories Section -->
-    <section class="categories">
-        <div class="section-header">
-            <h2>Explore by Category</h2>
-            <p>Find psychology facts about different areas of your mind.</p>
-            <button class="btn-text">View All Categories →</button>
-        </div>
-        <div class="category-grid">
-            <div class="cat-card active">
-                <div class="cat-icon">🧠</div>
-                <span>Human Mind</span>
-            </div>
-            <div class="cat-card">
-                <div class="cat-icon">💡</div>
-                <span>Behavior</span>
-            </div>
-            <div class="cat-card">
-                <div class="cat-icon">❤️</div>
-                <span>Emotions</span>
-            </div>
-            <div class="cat-card">
-                <div class="cat-icon">👥</div>
-                <span>Relationships</span>
-            </div>
-            <div class="cat-card">
-                <div class="cat-icon">🧠</div>
-                <span>Memory</span>
-            </div>
-            <div class="cat-card">
-                <div class="cat-icon">🌙</div>
-                <span>Sleep & Dreams</span>
-            </div>
-            <div class="cat-card">
-                <div class="cat-icon">🎯</div>
-                <span>Habits</span>
-            </div>
-            <div class="cat-card">
-                <div class="cat-icon">💬</div>
-                <span>Communication</span>
-            </div>
-        </div>
-    </section>
 
-    <!-- Latest Psychology Facts Section -->
-    <section class="facts-section" id="facts">
-        <div class="section-header">
-            <h2>Latest Psychology Facts</h2>
-            <p>Small facts. Big insights. Explore the science of your mind.</p>
-            <button class="btn-text">View All Facts →</button>
-        </div>
-        <div class="facts-grid">
-            <div class="fact-card">
-                <span class="fact-tag">FACT #001</span>
-                <h3>Why do we sometimes remember embarrassing moments for years?</h3>
-                <p>Because our brain thinks these moments are important for our survival and learning.</p>
-                <span class="read-more">Read Full Fact →</span>
-            </div>
-            <div class="fact-card">
-                <span class="fact-tag">FACT #002</span>
-                <h3>Mind reading is a real thing (but it's a bias).</h3>
-                <p>We often assume we know what others are thinking, even when we don't.</p>
-                <span class="read-more">Read Full Fact →</span>
-            </div>
-            <div class="fact-card">
-                <span class="fact-tag">FACT #003</span>
-                <h3>Your brain is more active at night than you think.</h3>
-                <p>It processes emotions, memory and even creative ideas while you sleep.</p>
-                <span class="read-more">Read Full Fact →</span>
-            </div>
-            <div class="fact-card">
-                <span class="fact-tag">FACT #004</span>
-                <h3>We feel emotions in our body, not just mind.</h3>
-                <p>Emotions can trigger real physical changes like faster heartbeat or tense muscles.</p>
-                <span class="read-more">Read Full Fact →</span>
-            </div>
-        </div>
-    </section>
+                <!-- Hero Right / Brain Image -->
+                <div class="hero-image">
 
-    <!-- Explore the Human Mind Interactive Banner -->
-    <section class="interactive-banner" id="mind">
-        <div class="banner-content">
-            <div class="banner-icon">🧠</div>
-            <div>
-                <h2>Explore the Human Mind</h2>
-                <p>Click on different areas of the mind to discover amazing psychological facts and how your mind works.</p>
-            </div>
-        </div>
-        <button class="btn-primary">Start Exploring →</button>
-    </section>
+                    <img
+                        src="assets/brain.png"
+                        alt="Human Brain"
+                    >
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-logo">
-                <h2>Neural Whispers <span>ذہنی سرگوشیاں</span></h2>
-                <p>Mind • Psychology • Better You</p>
+                    <div class="hero-quote">
+
+                        <p>
+                            “The mind is a world of its own.
+                            It’s an intricate universe.”
+                        </p>
+
+                    </div>
+
+                    <div class="slider-dots">
+
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+
+                    </div>
+
+                </div>
+
             </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORY SECTION ================= -->
+        <section class="category-section">
+
+            <div class="category-container">
+
+                <!-- Did You Know -->
+                <div class="did-you-know">
+
+                    <div class="did-you-know-icon">
+                        🧠
+                    </div>
+
+                    <div class="did-you-know-content">
+
+                        <h3>
+                            Did You Know?
+                        </h3>
+
+                        <p>
+                            Your brain contains billions of neurons
+                            and constantly creates new connections.
+                        </p>
+
+                        <a href="#">
+                            Read This →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Categories -->
+                <div class="categories-area">
+
+                    <div class="section-title-row">
+
+                        <div>
+                            <h2>
+                                Explore by Category
+                            </h2>
+
+                            <p>
+                                Learn fascinating facts about every
+                                corner of your mind.
+                            </p>
+                        </div>
+
+                        <button
+                            class="view-category-button"
+                            type="button"
+                        >
+                            View All Categories
+                            <span>⌄</span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-list">
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">🧠</span>
+                            <span>Human Mind</span>
+                        </a>
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">♧</span>
+                            <span>Memory</span>
+                        </a>
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">♡</span>
+                            <span>Wellness</span>
+                        </a>
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">♧</span>
+                            <span>Relationships</span>
+                        </a>
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">◉</span>
+                            <span>Learning</span>
+                        </a>
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">☾</span>
+                            <span>Sleep &amp; Dreams</span>
+                        </a>
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">◌</span>
+                            <span>Emotions</span>
+                        </a>
+
+                        <a href="#" class="category-card">
+                            <span class="category-icon">▱</span>
+                            <span>Behavior</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PSYCHOLOGY FACTS ================= -->
+        <section
+            class="psychology-section"
+            id="psychology"
+        >
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Latest Psychology Facts
+                        </h2>
+
+                        <p>
+                            Small facts. Big insights. Fresh discoveries
+                            about yourself.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="view-all-button">
+                        View All Facts →
+                    </a>
+
+                </div>
+
+
+                <!-- Facts Cards -->
+                <div class="facts-grid">
+
+
+                    <!-- Fact 01 -->
+                    <article class="fact-card">
+
+                        <div class="fact-image">
+
+                            <img
+                                src="assets/fact-1.jpg"
+                                alt="Psychology Fact"
+                            >
+
+                        </div>
+
+                        <div class="fact-content">
+
+                            <span class="fact-number">
+                                FACT 01
+                            </span>
+
+                            <h3>
+                                Why we see familiar patterns
+                                everywhere
+                            </h3>
+
+                            <p>
+                                Your brain naturally searches for
+                                meaning and connections.
+                            </p>
+
+                            <a href="#">
+                                Read Fact →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Fact 02 -->
+                    <article class="fact-card">
+
+                        <div class="fact-image">
+
+                            <img
+                                src="assets/fact-2.jpg"
+                                alt="Psychology Fact"
+                            >
+
+                        </div>
+
+                        <div class="fact-content">
+
+                            <span class="fact-number">
+                                FACT 02
+                            </span>
+
+                            <h3>
+                                What reading in bed can do
+                                for your mind
+                            </h3>
+
+                            <p>
+                                A calm routine can help your brain
+                                transition toward rest.
+                            </p>
+
+                            <a href="#">
+                                Read Fact →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Fact 03 -->
+                    <article class="fact-card">
+
+                        <div class="fact-image">
+
+                            <img
+                                src="assets/fact-3.jpg"
+                                alt="Psychology Fact"
+                            >
+
+                        </div>
+
+                        <div class="fact-content">
+
+                            <span class="fact-number">
+                                FACT 03
+                            </span>
+
+                            <h3>
+                                Your brain’s emotional center
+                                is always listening
+                            </h3>
+
+                            <p>
+                                Emotions influence attention,
+                                memory and decisions.
+                            </p>
+
+                            <a href="#">
+                                Read Fact →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Fact 04 -->
+                    <article class="fact-card">
+
+                        <div class="fact-image">
+
+                            <img
+                                src="assets/fact-4.jpg"
+                                alt="Psychology Fact"
+                            >
+
+                        </div>
+
+                        <div class="fact-content">
+
+                            <span class="fact-number">
+                                FACT 04
+                            </span>
+
+                            <h3>
+                                Small habits can shape
+                                behavior over time
+                            </h3>
+
+                            <p>
+                                Repeated actions can become
+                                automatic through practice.
+                            </p>
+
+                            <a href="#">
+                                Read Fact →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HUMAN MIND SECTION ================= -->
+        <section
+            class="human-mind-section"
+            id="mind"
+        >
+
+            <div class="human-mind-container">
+
+                <div class="mind-icon">
+                    🧠
+                </div>
+
+                <div class="mind-content">
+
+                    <h2>
+                        Explore the Human Mind
+                    </h2>
+
+                    <p>
+                        Curious about what makes us think,
+                        feel, remember and connect?
+                    </p>
+
+                    <a href="#encyclopedia" class="primary-button">
+                        Start Exploring
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Brain Map -->
+                <div class="brain-map">
+
+                    <div class="map-label label-top">
+                        Memory
+                    </div>
+
+                    <div class="map-label label-right-top">
+                        Creativity
+                    </div>
+
+                    <div class="map-label label-left">
+                        Learning
+                    </div>
+
+                    <div class="map-label label-right">
+                        Focus
+                    </div>
+
+                    <div class="map-label label-bottom">
+                        Emotions
+                    </div>
+
+                    <div class="map-label label-bottom-right">
+                        Decision Making
+                    </div>
+
+                    <img
+                        src="assets/brain-glow.png"
+                        alt="Brain Map"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ENCYCLOPEDIA ================= -->
+        <section
+            class="encyclopedia-section"
+            id="encyclopedia"
+        >
+
+            <div class="encyclopedia-container">
+
+                <div class="encyclopedia-content">
+
+                    <h2>
+                        Psychology Encyclopedia
+                    </h2>
+
+                    <p>
+                        Explore psychology terms, concepts,
+                        behaviors and fascinating ideas.
+                    </p>
+
+                    <a href="#" class="secondary-button">
+                        Explore Encyclopedia
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MEMORY ================= -->
+        <section
+            class="memory-section"
+            id="memory"
+        >
+
+            <div class="memory-container">
+
+                <div class="memory-content">
+
+                    <h2>
+                        The Science of Memory
+                    </h2>
+
+                    <p>
+                        Discover how your brain stores,
+                        recalls and transforms memories.
+                    </p>
+
+                    <a href="#" class="primary-button">
+                        Discover Memory
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer
+        class="footer"
+        id="about"
+    >
+
+        <div class="footer-container">
+
+            <!-- Footer Logo -->
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+
+                    <div class="logo-icon">
+                        🧠
+                    </div>
+
+                    <div class="logo-text">
+
+                        <h2>
+                            Neural Whispers
+                        </h2>
+
+                        <p>
+                            ذہنی سرگوشیاں
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <p class="footer-description">
+                    Exploring the fascinating world of the
+                    human mind, psychology and behavior.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
             <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Psychology Facts</a></li>
-                    <li><a href="#">Mind & Behavior</a></li>
-                    <li><a href="#">Emotions</a></li>
-                </ul>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">Home</a>
+
+                <a href="#psychology">
+                    Psychology Facts
+                </a>
+
+                <a href="#mind">
+                    Mind &amp; Behavior
+                </a>
+
+                <a href="#encyclopedia">
+                    Encyclopedia
+                </a>
+
             </div>
-            <div class="footer-links">
-                <h4>&nbsp;</h4>
-                <ul>
-                    <li><a href="#">Relationships</a></li>
-                    <li><a href="#">Memory</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+
+                <h3>
+                    Stay Connected
+                </h3>
+
+                <p>
+                    Get interesting psychology facts
+                    in your inbox.
+                </p>
+
+                <form>
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
             </div>
-            <div class="footer-newsletter">
-                <h4>Stay Connected</h4>
-                <div class="social-icons">
-                    <span>🌐</span><span>✖</span><span>📷</span><span>▶</span><span>📌</span>
-                </div>
-                <div class="subscribe-box">
-                    <input type="email" placeholder="Your email address">
-                    <button>Subscribe</button>
-                </div>
-            </div>
+
         </div>
+
+
         <div class="footer-bottom">
-            <p>© 2026 Neural Whispers. All rights reserved. | Designed with ❤️ for curious minds.</p>
-            <div class="footer-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Contact</a>
+
+            <p>
+                © 2026 Neural Whispers. All rights reserved.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms of Use
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
             </div>
+
         </div>
+
     </footer>
 
+
+    <!-- JavaScript File -->
     <script src="script.js"></script>
+
 </body>
 </html>
